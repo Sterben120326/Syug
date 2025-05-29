@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>HIHIHI</title>
+<link rel="stylesheet" href="extend/1.css" />
+</head>
+<body>
+
+<div id="intro" class="message">
+  <h1>Hi Guys,</h1>
+  <p>💜</p>
+  <div style="font-weight: bold; font-size: 1.2rem; margin-bottom: 20px;">
+    💌 Open me 💌
+  </div>
+  <button class="button" onclick="openIntro()">Open</button>
+</div>
+
+<div id="step1" class="message hidden">
+  Hindi po ako masamang tao. Please proceed po.
+  <br />
+  <button class="button" onclick="yesToStep2()">Yes</button>
+  <button class="button" onclick="noToMissMe()">No</button>
+</div>
+
+<div id="step2" class="message hidden">
+  Kailangan ko lang po ng pangmiryenda ayaw ako bigyan ni mama HAHAHA.
+  <br />
+  <button class="button" onclick="showPics()">Next</button>
+</div>
+
+<div id="picsStep" class="message hidden">
+  Ako po pala ay isang mabait na bata
+  <br />
+  <div class="pics">
+    <img src="extend/6c4d5467-4cdb-4900-a91d-a2fa49b1a1bf.jpg" alt="Tayo 1" />
+    <img src="extend/494818670_1005226925117419_7311245684405007857_n.jpg" alt="Tayo 2" />
+  </div>
+  <br />
+  Kahit na 50 peso lang po malaking halaga na po 💞
+  <br />
+  <button id="missYes" class="button" onclick="showTulip()">Mag bigay</button>
+  <button id="missNo" class="button" onclick="noClicked()">Wag mag bigay</button>
+</div>
+
+<div id="missMeStep" class="message hidden">
+  🥺
+  <br />
+  <button id="missYes2" class="button" onclick="showTulip()">Proceed?</button>
+  <button class="button" onclick="goBack('step1')">Back</button>
+</div>
+
+<div id="tulipStep" class="message hidden tulip-background">
+  <div>Gcash kopo 💜</div>
+  <div class="pics">
+    <img src="extend/494821808_2772130699843045_6343587405900091831_n.jpg" alt="Tayo 2" />
+  <div>09674320866. Salamat po💞</div>
+    <img class="gif" alt="gif"
+src="https://raw.githubusercontent.com/DzarelDeveloper/Img/main/gifyou.webp">
+    <button class="button" onclick="goBack('intro')">Back</button>
+  </div>
+</div>
+
+<script src="extend/1.js"></script>
+</body>
+</html>
